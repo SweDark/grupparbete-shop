@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-center">
+        <div class="nav-header">
+            <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+        </div>    
+    
+        <ul>
+            <li class="list"><a href="index.html" class="nav-links">Hem</a></li>
+            <li class="list"><a href="about.html" class="nav-links">Om oss!</a></li>
+            <li class="list"><a href="shop.html" class="nav-links">Shop</a></li>
+            <li class="list"><a href="" class="nav-links">Profil</a></li>
+            <li><a href="" class="btn">Log in</a></li>
+            <li><a href="" class="btn">Register</a></li>
+        </ul>
+    </div>
+    </nav>
+    <main>
+        <section>
+            <p>1. Shopping Cart</p>
+            <p>2. Shipping details & payment</p>
+        </section>
+        <section>
+            <div>
+                <h1>Payment method</h1>
+                <br>
+                <div>
+                    <!-- TBA FIX! -->
+                    <input type="radio" name="favourite_colour"
+                    value="red" checked> creditcard
+
+                    <form class="credit-card">
+                        <div class="form-header">
+                          <h4 class="title">Credit card detail</h4>
+                        </div>
+                        <div class="form-body">
+                          <!-- Card Number -->
+                          <input type="text" class="card-number" placeholder="Card Number">
+                          <!-- Date Field -->
+                          <div class="date-field">
+                            <div class="month">
+                              <select name="Month">
+                                <option value="january">January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                                <option value="may">May</option>
+                                <option value="june">June</option>
+                                <option value="july">July</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                              </select>
+                            </div>
+                            <div class="year">
+                              <select name="Year">
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                              </select>
+                            </div>
+                          </div>
+                       
+                          <!-- Card Verification Field -->
+                          <div class="card-verification">
+                            <div class="cvv-input">
+                              <input type="text" placeholder="CVV">
+                            </div>
+                            <div class="cvv-details">
+                              <p>3 or 4 digits usually found <br> on the signature strip</p>
+                            </div>
+                          </div>
+                       
+                          <!-- Buttons
+                          <button type="submit" class="proceed-btn"><a href="#">Proceed</a></button>
+                          <button type="submit" class="paypal-btn"><a href="#">Pay With paypal</a></button> -->
+                        </div>
+                      </form>
+                </div>
+            </div>
+            <div>
+                <h1>summary</h1>
+                <article></article>
+                <article></article>
+                <br>
+                <p>subtotal</p>
+                <p>$600</p>
+                <p>Shipping</p>
+                <p>free</p>
+                <p>taxes</p>
+                <p>$13</p>
+                <br>
+                <p>total</p>
+                <p>$613</p>
+            </div>
+        </section>
+        <section>
+            <a href="">Pay now</a>
+            <a href="">Cancel</a>
+        </section>
+    </main>
+    <footer>
+        <img src="" alt="">
+        <p>vart</p>
+    </footer>
+</body>
+</html>
