@@ -373,6 +373,7 @@ footer {
 .TopProducts{
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .productDiv{
@@ -386,7 +387,7 @@ footer {
 
 .productCard{
   margin-top: 1rem;
-  width: 50%;
+  width: 33%;
   align-items: center;
   display: flex; 
 }
