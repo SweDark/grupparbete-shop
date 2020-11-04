@@ -353,9 +353,11 @@ footer {
 */
 
 .Allproducts{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: left; */
+  margin: 0 0.5rem 2rem;
+  font-size: 1.8rem;
 }
 
 .red-stars{
@@ -379,6 +381,7 @@ footer {
 
 .productCardimg{
   width: 50%;
+  margin: 0;
 }
 
 .productCard{
