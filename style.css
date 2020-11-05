@@ -7,17 +7,17 @@
 
     /* dark shades of primary color*/
     /* --clr-primary-1: hsl(43, 86%, 17%); */
-    --clr-primary-1: hsl(184, 91%, 17%);
-    --clr-primary-2: hsl(185, 84%, 25%);
-    --clr-primary-3: hsl(185, 81%, 29%);
-    --clr-primary-4: hsl(184, 77%, 34%);
-    --clr-primary-5: #2caeba;
+    --clr-primary-1: hsl(335, 91%, 17%);
+    --clr-primary-2: hsl(335, 84%, 25%);
+    --clr-primary-3: hsl(335, 81%, 29%);
+    --clr-primary-4: hsl(334, 77%, 34%);
+    --clr-primary-5: #ba2c62;
     /* lighter shades of primary color */
-    --clr-primary-6: hsl(185, 57%, 50%);
-    --clr-primary-7: hsl(184, 65%, 59%);
-    --clr-primary-8: hsl(184, 80%, 74%);
-    --clr-primary-9: hsl(185, 94%, 87%);
-    --clr-primary-10: hsl(186, 100%, 94%);
+    --clr-primary-6: hsl(335, 57%, 50%);
+    --clr-primary-7: hsl(334, 65%, 59%);
+    --clr-primary-8: hsl(335, 80%, 74%);
+    --clr-primary-9: hsl(335, 94%, 87%);
+    --clr-primary-10: hsl(336, 100%, 94%);
     /* darkest grey - used for headings */
     --clr-grey-1: hsl(209, 61%, 16%);
     --clr-grey-3: hsl(209, 34%, 30%);
@@ -88,11 +88,12 @@
     width: 12rem;
     text-align: center;
     margin: 0 auto;
+    margin-top: 1rem;
   }
 
   hr{
-    border: 4px solid red;
-    opacity: 0.6;
+    border: 4px solid var(--clr-primary-5);
+    opacity: 0.7;
     margin: 1rem;
     z-index: 2;
   }
@@ -109,7 +110,7 @@
     transition: var(--transition);
     font-size: 1.375rem;
     border: 2px solid transparent;
-    cursor: pointer;
+    cursor:  pointer;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: var(--radius);
    }
@@ -119,13 +120,17 @@
    }
 
    .btn-large:hover{
-      background-color: #555;
-      color: white;
+    color: var(--clr-primary-1);
+    background: var(--clr-primary-8);
    }
 
   .logo {
       height: 80px;
   }
+a{
+  color: var(--clr-primary-7);
+}
+
 /* navigation */
   nav {
     width: 100%;
@@ -189,6 +194,27 @@
     box-shadow: 0px 2px var(--clr-primary-5);
   }
 /* navigation end */
+
+/*Register Extras*/
+
+.register-form-main{
+  
+}
+
+.register-text-margin{
+ margin: 0 2rem 0 2rem
+}
+
+.register-form{
+
+}
+
+/**/
+
+
+
+
+
 /* Footer Start */
 .Footerclass{
   margin-top: 1.5rem;
@@ -303,7 +329,7 @@ background-color: white;
   /* display: flex;
   flex-direction: column;
   justify-content: left; */
-  margin: 0 0.5rem 2rem;
+  margin: 0 0.5rem 3rem;
   font-size: 1.8rem;
   padding-top: 2.5rem;
 }
@@ -324,13 +350,120 @@ background-color: white;
   flex-wrap: wrap;
 }
 
+.TopProducts h2{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.similarProducts{
+  display: flex;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  flex-direction:column;
+}
+
+.similarProducts h2{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.reviewtext{
+  width: 60%;
+  /* margin: auto; */
+  margin:3rem 0 0 0;
+  /* border: 5px solid #FFFF00; */
+  /* padding: 10px; */
+}
+
+.reviewsection{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.reviewCard{
+  display:flex;
+  width:100%;
+}
+
+.userinfo{
+  display:flex;
+  flex-direction: row;
+  width:30%;
+  margin:0;
+}
+
+.userText{
+  margin: 0;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.userimg{
+  width: 35%;
+  margin: 0 0 1rem 2rem;;
+  /* padding:1rem 3rem; */
+}
+
+.otherProducts{
+  display:flex;
+  flex-direction: row;
+  margin: 0 0 2rem 1.5rem;
+  /* top right bottom left */
+}
+
+.product-info{
+  margin: 2rem 0 0 1.5rem;
+}
+
+/* .product-info p{
+  margin: 0 3rem 0 0;
+} */
+
+.product-info hr{
+  margin: 0 1rem 0 -0.5rem;
+}
 .productDiv{
   display: flex;
 }
 
+.add-cart-margin{
+  margin: 4.5rem 0 0 0.5rem;
+}
+
 .productCardimg{
-  width: 50%;
-  margin: 0;
+  width: 200px;
+  height: 200px;
+  margin: 0 0 1rem 2rem;
+}
+
+.product-page-img{
+  width: 35%;
+  margin: 0 0 0 4rem
+}
+
+.productcontain{
+  margin: 0.5rem 0 1rem 0;
+  display:flex;
+  flex-direction: column;
+  width: 35%;
+}
+.productcontain label, .productcontain select, .productcontain input{
+  margin: 0.3rem 0 0 0;
+
+}
+
+.productcontain-info {
+  margin: 1rem 3rem 0 0;
+  font-size: 1rem;
+}
+
+.productarticle{
+  display: flex;
+  margin: 2.5rem 0 2.5rem 4rem;
 }
 
 .productCard{
@@ -429,7 +562,7 @@ background-color: white;
   font-size: 1.5rem;
   margin: 2rem 0 0 2rem;
 }
-.cart-header-underline{
+.underline{
   width: 15.5rem;
   height: 0.25rem;
   margin: 0.9rem 0 1.25rem 1rem;
@@ -480,15 +613,6 @@ background-color: white;
 }
 
 
-
-
-
-
-
-
-
-
-
 * {box-sizing: border-box}
 
 /* Add padding to containers */
@@ -500,16 +624,21 @@ background-color: white;
 /* Full-width input fields */
 .registerform{
   width: 96%;
-  padding: 10px;
+  padding: 0.8rem;
+  margin: 0.3rem 0 1rem 0;
   /* margin: 5px 0 15px 0; */
   display: inline-block;
   border: none;
-  background: #d5eafa;
+  background: var(--clr-grey-10);
 }
 
 .registerform:focus {
-  background-color: #ddd;
+  background-color: var(--clr-primary-9);
   outline: none;
+}
+
+.register-label{
+  margin: 0 0 0 1rem;
 }
 
 /* Overwrite default styles of hr */
@@ -521,14 +650,14 @@ background-color: white;
 
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: #5132c2;
-  color: white;
-  padding: 16px 20px;
+  /* background-color: #5132c2; */
+  /* color: white; */
+  /* padding: 16px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.9; */
 }
 
 .registerbtn:hover {
@@ -536,9 +665,9 @@ background-color: white;
 }
 
 /* Add a blue text color to links */
-a {
+/* a {
   color: dodgerblue;
-}
+} */
 
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
@@ -553,6 +682,10 @@ a {
 }
 
 /* Credit card */
+.payment-method-title{
+  margin: 1rem 1rem -0.5rem 2.5rem;
+  font-size: 2rem;
+}
 
 .payment-content {
   display:flex;
@@ -564,9 +697,6 @@ a {
   margin: 0;
 }
 
-/* .payment-summary{
-  width: 49%;
-} */
 .payment-product-view{
   margin:1rem 0 0 0;
   display:flex;
@@ -598,14 +728,16 @@ a {
 .payment-summary h1{
   /* width: 17%; */
   /* margin: 0 0 0 2rem; */
-  margin: 1rem 0 -0.3rem 1.4rem;
+  margin: 4rem 0 -0.3rem 1.4rem;
+  font-size: 1.3rem;
    
 }
 .payment-view {
+  width: 100%;
   margin: -0.4rem 0 0 2rem;
 }
 
-  .credit-card {
+.credit-card {
     width: 100%;
     /* margin: 60px auto 0; */
     margin:15px;
@@ -615,21 +747,42 @@ a {
     box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
 }
 
+
+.card-number{
+  width: 100%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+}
+
+
+
 .form-header {
-    height: 60px;
+
     padding: 20px 30px 0;
-    border-bottom: 1px solid #e1e8ee;
+    /* border-bottom: 1px solid #e1e8ee; */
+    margin: 0 0 1rem 0;
 }
 
 .form-body {
-    height: 340px;
-    padding: 30px 30px 20px;
+    padding: 0px 30px 20px;
+    border-bottom: 1px solid #e1e8ee;
 }
 
-.title {
+.payment-method-label {
     font-size: 18px;
     margin: 0;
     color: #5e6977;
+    font-weight: 600;
+}
+
+.paypal-img{
+width: 95%;
+}
+
+.cart-step-buttons{
+margin: 1rem 0 2rem 1.5rem;
 }
 
 /* Common */
@@ -660,7 +813,8 @@ a {
 }
 
 /* Card Number */
-.card-number {
+.card-number,
+.card-name {
     width: 40%;
     margin-bottom: 13px;
     padding-left: 20px;
@@ -668,11 +822,25 @@ a {
     border-radius: 6px;
 }
 
+
 /* Date Field */
+
+.date-field {
+  width:70%;
+  display:flex;
+  flex-direction: row;
+  margin:0;
+}
+.month, .year{
+width: 475%;
+margin:0;
+}
+
 .month select,
 .year select {
-    width: 20%;
+    width: 45%;
     margin-bottom: 20px;
+    padding-left: 20px;
     border: 2px solid #e1e8ee;
     border-radius: 6px;
     background: url('caret.png') no-repeat;
@@ -680,18 +848,10 @@ a {
     -moz-appearance: none;
     -webkit-appearance: none;
 }
- 
-.month select {
-    float: left;
-}
- 
-.year select {
-    float: right;
-}
+
 
 /* Card Verification Field */
 .cvv-input input {
-    float: left;
     width: 13%;
     padding-left: 10px;
     border: 2px solid #e1e8ee;
@@ -718,6 +878,11 @@ a {
   box-sizing: inherit;
 }
 
+.our-team-section{
+  margin: 1rem 0rem 0rem 8rem;
+}
+
+
 .column {
   float: left;
   width: 29%;
@@ -733,7 +898,7 @@ a {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
+  background-color: var(--clr-primary-4);
   color: white;
 }
 
@@ -781,3 +946,43 @@ a {
 }
 
 /*About End*/
+
+
+/* Profile Start */
+.profile-form-main{
+  width: 50%;
+  height:50%;
+  background-color:rgba(172, 162, 162, 0.466)ff;
+}
+
+.profile-container{
+  padding: 3rem 16px;
+
+}
+
+.profile-text{
+  margin: 0 2rem 0 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-label{
+  margin: 0 0 0 1rem;
+}
+
+.profile-answer-label{
+  width: 50%;
+  padding: 0.8rem;
+  margin: 0.3rem 0 1rem 0.3rem;
+  display: inline-block;
+  border: none;
+  background: var(--clr-grey-10);
+}
+
+.profile-wrapper{
+  width: 49%;
+  margin: 0;
+}
+
+/* Profile End */

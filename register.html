@@ -13,15 +13,15 @@
     <nav>
         <div class="nav-center">
             <div class="nav-header">
-                <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+                <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
             </div>
 
             <ul>
                 <li class="list"><a href="index.html" class="nav-links">Hem</a></li>
                 <li class="list"><a href="about.html" class="nav-links">Om oss!</a></li>
-                <li class="list"><a href="shop.html" class="nav-links">Shop</a></li>
-                <li><a href="home.html" class="btn">Log in</a></li>
-                <li><a href="register.html" class="btn">Register</a></li>
+                <li class="list"><a href="shop.html" class="nav-links">Butik</a></li>
+                <li><a href="home.html" class="btn">Logga in</a></li>
+                <li><a href="register.html" class="btn">Registera</a></li>
             </ul>
         </div>
     </nav>
@@ -29,35 +29,40 @@
 
         <form action="action_page.php">
             <div class="container">
-              <h1>Register</h1>
-              <p>Fyll i formuläret för att registrera dig.</p>
+                <div class="register-text-margin">
+                    <h1>Register</h1>
+                    <p>Fyll i formuläret för att registrera dig.</p>
+                </div>
+
               <hr>
-        
+                <div class="register-text-margin">
+              <label class="register-label"for="name"><b>Namn</b></label>
+              <input class="registerform" type="text" placeholder="Helmut Mekan" name="name" id="namelabel" required>
 
-              <label for="name"><b>Namn</b></label>
-              <input class="registerform" type="text" placeholder="Enter name" name="name" id="namelabel" required>
+              <label class="register-label" for="adr"><b>Address</b></label>
+              <input class="registerform" type="text" placeholder="Linköpingsvägen 2" name="adr" id="adrlabel" required>
 
-              <label for="adr"><b>Address</b></label>
-              <input class="registerform" type="text" placeholder="Enter address" name="adr" id="adrlabel" required>
+              <label class="register-label" for="pst"><b>Postnummer</b></label>
+              <input class="registerform" type="text" placeholder="582 27" name="pst" id="pstlabel" required>
 
-              <label for="pst"><b>Postnummer</b></label>
-              <input class="registerform" type="text" placeholder="Enter postal code" name="pst" id="pstlabel" required>
+              <label class="register-label" for="msg"><b>Stad</b></label>
+              <input  class="registerform" type="text" placeholder="Linköping" name="message" id="msg-label" required>
 
-              <label for="email"><b>Email</b></label>
-              <input class="registerform" type="text" placeholder="Enter email" name="email" id="email" required>
+              <label class="register-label" for="email"><b>Email</b></label>
+              <input class="registerform" type="text" placeholder="helmut.mekan@hotmale.com" name="email" id="email" required>
 
-              <label for="psw"><b>Password</b></label>
-              <input class="registerform" type="password" placeholder="Enter password" name="psw" id="pswlabel" required>
+              <label class="register-label" for="psw"><b>Lösenord</b></label>
+              <input class="registerform" type="password" placeholder="**************" name="psw" id="pswlabel" required>
           
-              <label for="psw-repeat"><b>Confirm password</b></label>
-              <input class="registerform" type="password" placeholder="confirm password" name="psw-repeat" id="psw-repeat" required>
+              <label class="register-label" for="psw-repeat"><b>Konfirmera Lösenord</b></label>
+              <input class="registerform" type="password" placeholder="**************" name="psw-repeat" id="psw-repeat" required>
           
-              <label for="msg"><b>Message</b></label>
-              <input  class="registerform" type="text" placeholder="Enter a message" name="message" id="msg-label" required>
+
+            </div>
               <hr>
 
               <div class="LoginCallToActionButtonContainer">
-                <a href="" class="btn-large margin-top">Registera konto</a>
+                <a href="home.html" class="btn-large margin-top">Registera konto</a>
             </div>
             </div>
           
@@ -70,7 +75,7 @@
     </main>
 
     <footer class="footerclass">
-        <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+        <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
         <p>Kötteriet på Slakterigatan</p>
         <p>Köttbullevägen 43, Skogskyrkogården</p>
     </footer>

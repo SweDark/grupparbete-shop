@@ -10,51 +10,56 @@
     <nav>
         <div class="nav-center">
         <div class="nav-header">
-            <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+            <a href="home.html"><img src="images/logo.png" alt="" class="logo"></a>
         </div>    
     
         <ul>
             <li class="list"><a href="index.html" class="nav-links">Hem</a></li>
             <li class="list"><a href="about.html" class="nav-links">Om oss!</a></li>
-            <li class="list"><a href="shop.html" class="nav-links">Shop</a></li>
+            <li class="list"><a href="shop.html" class="nav-links">Butik</a></li>
             <li class="list"><a href="" class="nav-links">Profil</a></li>
-            <li><a href="cart.html" class="btn">🛒Your cart</a></li>
-            <li><a href="index.html" class="btn">Log Out</a></li>
+            <li><a href="cart.html" class="btn">🛒Din Korg</a></li>
+            <li><a href="index.html" class="btn">Logga ut</a></li>
         </ul>
     </div>
     </nav>
     <main>
       <section class="cart-steps">
         <article class="cart-step">
-            <p>1. Shopping Cart</p>
+            <p>1. Shopping Korg</p>
             <div class="underline-short"></div>
         </article>
         <article class="cart-step-current">
-            <p>2. Shipping details & payment</p>
+            <p>2. Betalningsinformation</p>
             <div class="underline-short-current"></div>
         </article>
     </section>
         <section class="payment-content">
           <article class="payment-method">
             <div>
-                <h1>Payment method</h1>
+                <h1 class="payment-method-title">Betalningsalternativ</h1>
                 <hr>
                 <div>
                     <!-- TBA FIX! -->
-                    
                     <form class="credit-card">
-                      
-
                         <div class="form-header">
-                          <input type="radio" name="favourite_colour" value="red" checked>
-                          <h4 class="title">Kreditkort</h4>
+                          <input type="radio" id="creditcard" name="payment" value="creditcard" checked>
+                          <label for="creditcard" class="payment-method-label" >Kreditkort</label>
                         </div>
                         <div class="form-body">
+                          <div class=name-verification>
+                            <h4>Namn</h4>
+                            <input class="card-name" type="text" placeholder="Namn">
+                           </div>
+
                           <!-- Card Number -->
-                          <input type="text" class="card-number" placeholder="Card Number">
+                          <h4>Kortnummer</h4>
+                          <input class="card-number" type="text" class="card-number" placeholder="0000 0000 0000 0000">
                           <!-- Date Field -->
                           <div class="date-field">
+                            
                             <div class="month">
+                              <h4>Månad</h4>
                               <select name="Month">
                                 <option value="january">January</option>
                                 <option value="february">February</option>
@@ -69,8 +74,10 @@
                                 <option value="november">November</option>
                                 <option value="december">December</option>
                               </select>
+                              
                             </div>
                             <div class="year">
+                              <h4>År</h4>
                               <select name="Year">
                                 <option value="2020">2020</option>
                                 <option value="2021">2021</option>
@@ -88,66 +95,76 @@
                           <!-- Card Verification Field -->
                           <div class="card-verification">
                             <div class="cvv-input">
+                              <h4>CVV</h4>
                               <input type="text" placeholder="CVV">
                             </div>
-                            <div class="cvv-details">
-                              <p>3 or 4 digits usually found <br> on the signature strip</p>
-                            </div>
                           </div>
-                       
                           <!-- Buttons
                           <button type="submit" class="proceed-btn"><a href="#">Proceed</a></button>
                           <button type="submit" class="paypal-btn"><a href="#">Pay With paypal</a></button> -->
                         </div>
+
+                        <div>
+                          <div class="form-header">
+                            <input type="radio" id="paypal" name="payment" value="paypal">
+                            <label for="paypal" class="payment-method-label">Paypal</label>
+                            <img class="paypal-img" src="images/paypal.png" alt="">
+                          </div>
+                        </div>
                       </form>
+
+                      
                 </div>
             </div>
             </article>
             <aside class="payment-summary">
-              <h1>Summary</h1>
-              <div class="cart-header-underline"></div>
+              <h1>Sammanfattning</h1>
+              <div class="underline"></div>
               <div class="payment-product-view">
                 <img src="images/korvkasse.png" class="payment-img"alt="">
                 <div class="product-payment-text">
                   <p>Korvkasse</p>
-                  <p>699:-</p>
+                  <p>499:-</p>
                 </div>
               </div>
               <div class="payment-product-view">
-                <img src="images/korvkasse.png" class="payment-img"alt="">
+                <img src="images/grytkasse.png" class="payment-img"alt="">
                 <div class="product-payment-text">
                   <p>Korvkasse</p>
                   <p>699:-</p>
                 </div>
               </div>
 
-              <div class="cart-header-underline"></div>
+              <div class="underline"></div>
                 <div class="payment-view">
                     <p>Sub total </p>
-                    <p class="text-right">1248 :-</p>
+                    <p class="text-right">1198 :-</p>
                     <p>Frakt</p>
-                    <p class="text-right">99 :-</p>
+                    <p class="text-right">22 :-</p>
                     <p>Kupong</p>
-                    <p class="text-right">MEATLOVERS - 10 SEK</p> 
+                    <p class="text-right">MEATLOVERS <br>-10 SEK</p> 
                 </div>
-                <div class="cart-header-underline"></div>
+                <div class="underline"></div>
                     <div class="payment-view" >
                       <p>TOTAL</p>
-                      <p class="text-right">1337 :-</p>
+                      <p class="text-right">1210 :-</p>
                     </div>
-
             </aside>
         </section>
-        <div>               
-            <a href="home.html" class="btn">Pay now</a>
-            <a href="cart.html" class="btn">Previous</a>
-            <a href="Home.html" class="btn">Cancel</a>
+
+        <div class="cart-step-buttons">
+            <a href="Home.html" class="btn">Avbryt</a>
+            <a href="cart.html" class="btn">Gå tillbaka</a>
+            <a href="home.html" class="btn" id="submit-payment">Betala</a>
         </div>
+
     </main>
     <footer class="footerclass">
-      <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+      <a href="home.html"><img src="images/logo.png" alt="" class="logo"></a>
       <p>Kötteriet på Slakterigatan</p>
       <p>Köttbullevägen 43, Skogskyrkogården</p>
   </footer>
+<script src="scripts.js"></script>
 </body>
+
 </html>
