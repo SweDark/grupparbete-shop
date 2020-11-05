@@ -17,63 +17,99 @@
             <li class="list"><a href="about.html" class="nav-links">Om oss!</a></li>
             <li class="list"><a href="shop.html" class="nav-links">Shop</a></li>
             <li class="list"><a href="" class="nav-links">Profil</a></li>
-            <li><a href="" class="btn">Log in</a></li>
-            <li><a href="" class="btn">Register</a></li>
+            <li><a href="cart.html" class="btn">🛒Your cart</a></li>
+            <li><a href="home.html" class="btn">Log Out</a></li>
         </ul>
     </div>
     </nav>
+
     <main>
-        <section>
-            <p>1. Shopping Cart</p>
-            <p>2. Shipping details & payment</p>
-        </section>
-        <section>
-            <h2>Shopping cart</h2>
-            <hr>
-            <article>
-                <img src="" alt="">
-                <p>Product name</p>
-                <p>short desc</p>
-                <p>$ 300</p>
-                <a href="">Remove</a>
+
+        <section class="cart-steps">
+            <article class="cart-step-current">
+                <p>1. Shopping Cart</p>
+                <div class="underline-short-current"></div>
             </article>
-            <article>
-                <img src="" alt="">
-                <p>Product name</p>
-                <p>short desc</p>
-                <p>$ 300</p>
-                <a href="">Remove</a>
+            <article class="cart-step">
+                <p class="underline">2. Shipping details & payment</p>
+                <div class="underline-short"></div>
+            </article>
+        </section>
+
+        
+        <section class="cart-items">
+            
+            <h2 class="cart-header">Shopping cart</h2>
+            <div class="cart-header-underline"></div>
+            <article class="productCard-cart">
+                <img class="productCard-cart-img" src="images/korvkasse.png" alt="Lots of Sausages">
+                <div class="Allproducts-cart">
+                    <p>Korv Kassen</p> 
+                    <p class="cart-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, hic eaque. hdfhdsjijsdf</p>
+                    <p> 549:-</p>
+                </div>            
+
+                <div>
+                    <a href="" class="btn center-btn">Remove</a>
+                </div>
+            </article>
+            
+            <article class="productCard-cart">
+                <img class="productCard-cart-img" src="images/korvkasse.png" alt="Lots of Sausages">
+                <div class="Allproducts-cart">
+                    <p>Korv Kassen</p>
+                    <p class="cart-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequathgdf hsdfhsdfhs dfhs dfhsdhsd</p>
+                    <p>699:-</p>
+                </div>
+                <div>
+                    <a href="" class="btn center-btn">Remove</a>
+                </div>
             </article>
         </section>
         <section>
             <div>
-                <h3>Summary</h3>
-                <hr>
-                <input type="text" placeholder="ENTER COUPON CODE">
-                <hr>
-                <div>
-                    <p>Sub total</p>
-                    <p>$ 600</p>
-                    <p>Shipping</p>
-                    <p>free</p>
-                    <p>Taxes</p>
-                    <p>$13</p>
-                    <hr> 
-                    <p>TOTAL</p>
-                    <p>$613</p>
-                </div>
-               
-                <a href="">Next</a>
-                <a href="">Cancel</a>
+                <h3 class="cart-header">Sammanfattning</h3>
+                <div class="cart-header-underline"></div>
+                <article class="coupon-container">
+                    <h5 class="coupon-question">Har du en rabattkupong?</h5>
+                    <input class="coupon" type="text" placeholder="MEATLOVERS">
+                </article>
+                
+
+                <div class="cart-header-underline"></div>
+                <article>
+                    <div class="cart-summary">
+                        <p>Sub total </p>
+                        <p class="text-right">1248 :-</p>
+                        <p>Frakt</p>
+                        <p class="text-right">99 :-</p>
+                        <p>Kupong</p>
+                        <p class="text-right">MEATLOVERS -10 SEK</p> 
+                    </div>
+                    <div class="cart-header-underline"></div>
+                        <div class="cart-summary">
+                            <p>TOTAL</p>
+                            <p class="text-right">1337 :-</p>
+                        </div>
+                        <div class="cart-summary">
+                            <a href="home.html" class="btn">Cancel</a>
+                            <a href="payment.html" class="btn">Next</a>
+                        </div>
+                </article>
+                
+
+                
+                <!-- <a href="payment.html">Next</a>
+                <a href="home.html">Cancel</a> -->
             </div>
         </section>
     </main>
 
 
-
-    <footer>
-        <img src="" alt="">
-        <p>vart</p>
+    <footer class="footerclass">
+        <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+        <p>Kötteriet på Slakterigatan</p>
+        <p>Köttbullevägen 43, Skogskyrkogården</p>
     </footer>
     
 </body>

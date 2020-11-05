@@ -18,28 +18,36 @@
             <li class="list"><a href="about.html" class="nav-links">Om oss!</a></li>
             <li class="list"><a href="shop.html" class="nav-links">Shop</a></li>
             <li class="list"><a href="" class="nav-links">Profil</a></li>
-            <li><a href="" class="btn">Log in</a></li>
-            <li><a href="" class="btn">Register</a></li>
+            <li><a href="cart.html" class="btn">🛒Your cart</a></li>
+            <li><a href="index.html" class="btn">Log Out</a></li>
         </ul>
     </div>
     </nav>
     <main>
-        <section>
+      <section class="cart-steps">
+        <article class="cart-step">
             <p>1. Shopping Cart</p>
+            <div class="underline-short"></div>
+        </article>
+        <article class="cart-step-current">
             <p>2. Shipping details & payment</p>
-        </section>
-        <section>
+            <div class="underline-short-current"></div>
+        </article>
+    </section>
+        <section class="payment-content">
+          <article class="payment-method">
             <div>
                 <h1>Payment method</h1>
                 <hr>
                 <div>
                     <!-- TBA FIX! -->
-                    <input type="radio" name="favourite_colour"
-                    value="red" checked> creditcard
-
+                    
                     <form class="credit-card">
+                      
+
                         <div class="form-header">
-                          <h4 class="title">Credit card detail</h4>
+                          <input type="radio" name="favourite_colour" value="red" checked>
+                          <h4 class="title">Kreditkort</h4>
                         </div>
                         <div class="form-body">
                           <!-- Card Number -->
@@ -64,15 +72,15 @@
                             </div>
                             <div class="year">
                               <select name="Year">
-                                <option value="2016">2016</option>
-                                <option value="2017">2017</option>
-                                <option value="2018">2018</option>
-                                <option value="2019">2019</option>
                                 <option value="2020">2020</option>
                                 <option value="2021">2021</option>
                                 <option value="2022">2022</option>
                                 <option value="2023">2023</option>
-                                <option value="2024">2024</option>
+                                <option value="2024">2024</option>                                
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
                               </select>
                             </div>
                           </div>
@@ -94,30 +102,52 @@
                       </form>
                 </div>
             </div>
-            <div>
-                <h1>summary</h1>
-                <article></article>
-                <article></article>
-                <hr>
-                <p>subtotal</p>
-                <p>$600</p>
-                <p>Shipping</p>
-                <p>free</p>
-                <p>taxes</p>
-                <p>$13</p>
-                <hr>
-                <p>total</p>
-                <p>$613</p>
-            </div>
+            </article>
+            <aside class="payment-summary">
+              <h1>Summary</h1>
+              <div class="cart-header-underline"></div>
+              <div class="payment-product-view">
+                <img src="images/korvkasse.png" class="payment-img"alt="">
+                <div class="product-payment-text">
+                  <p>Korvkasse</p>
+                  <p>699:-</p>
+                </div>
+              </div>
+              <div class="payment-product-view">
+                <img src="images/korvkasse.png" class="payment-img"alt="">
+                <div class="product-payment-text">
+                  <p>Korvkasse</p>
+                  <p>699:-</p>
+                </div>
+              </div>
+
+              <div class="cart-header-underline"></div>
+                <div class="payment-view">
+                    <p>Sub total </p>
+                    <p class="text-right">1248 :-</p>
+                    <p>Frakt</p>
+                    <p class="text-right">99 :-</p>
+                    <p>Kupong</p>
+                    <p class="text-right">MEATLOVERS - 10 SEK</p> 
+                </div>
+                <div class="cart-header-underline"></div>
+                    <div class="payment-view" >
+                      <p>TOTAL</p>
+                      <p class="text-right">1337 :-</p>
+                    </div>
+
+            </aside>
         </section>
-        <section>
-            <a href="">Pay now</a>
-            <a href="">Cancel</a>
-        </section>
+        <div>               
+            <a href="home.html" class="btn">Pay now</a>
+            <a href="cart.html" class="btn">Previous</a>
+            <a href="Home.html" class="btn">Cancel</a>
+        </div>
     </main>
-    <footer>
-        <img src="" alt="">
-        <p>vart</p>
-    </footer>
+    <footer class="footerclass">
+      <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+      <p>Kötteriet på Slakterigatan</p>
+      <p>Köttbullevägen 43, Skogskyrkogården</p>
+  </footer>
 </body>
 </html>

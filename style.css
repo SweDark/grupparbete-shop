@@ -52,7 +52,7 @@
     height: 100%;
     margin: 0;
     font-family: var(--ff-primary), var(--ff-secondary), Arial, Helvetica, sans-serif;
-    background: #ffffff;
+    background: #f5f4f4;
     color: #000000;
     line-height: 1.5;
     font-size: 0.875rem;
@@ -88,12 +88,13 @@
     width: 12rem;
     text-align: center;
     margin: 0 auto;
-    margin-top: 3rem;
   }
 
   hr{
-    border-top: 1px solid red;
+    border: 4px solid red;
+    opacity: 0.6;
     margin: 1rem;
+    z-index: 2;
   }
   .btn-large {
     text-decoration: none;
@@ -135,6 +136,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
   }
 
   ul {
@@ -154,7 +156,7 @@
       justify-content: flex-end;
   }
 
-   .nav-header {
+  .nav-header {
     justify-content: space-between;
     align-items: center;
   } 
@@ -187,24 +189,33 @@
     box-shadow: 0px 2px var(--clr-primary-5);
   }
 /* navigation end */
+/* Footer Start */
+.Footerclass{
+  margin-top: 1.5rem;
+  background-color: white;
+  padding-bottom: 1rem;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+/* Footer End */
 
 /* Main start */
 
 main {
 padding-top: 1rem;
 width: 70%;
+background-color: white;
 }
 
-
-footer {
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-}
 /* Main end */
 
 /* index page start */
-
 
 .LoginCallToAction {
   display: grid;
@@ -215,35 +226,389 @@ footer {
 .LoginCallToActionButtonContainer{
   display: flex;
   width: 50%;
-  
 }
 
 .login-text-p{
   text-decoration: underline;
-  text-shadow: 0px 1px red;
+  /* text-shadow: 0px 1px red; */
   font-style: italic;
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
 }
+
+/* hero on index */
+.hero-img{
+  width: 100%
+}
+  
+.hero-content {
+    text-align: center;
+    font-size: 1.6rem;
+}
+/* hero on index end */
+
+/* About on index Start */
+
+.AboutUs{
+  display: grid;
+  justify-content: space-evenly;
+  width: 75%;
+  font-size: 20px;
+  margin-top: 1.5rem;
+}
+
+.AboutUsH3{
+  font-size: 40px;
+}
+/*About on index End*/
+
 /* index page end  */
 
-/* Hero Start */
+/* /Shop/ Styling */
+.shop-tagline{
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  text-align: center;
+  background-color: #d7d7d7;
+  margin-top: -1rem;
+}
 
-.hero-img{
+.shop-tagline p {
+  font-size: 4rem;
+  color:#737373;
+
+}
+
+.underline-large {
+  width: 30rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.productCard a { 
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+/*  Products css  */
+
+.Allproducts{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: left; */
+  margin: 0 0.5rem 2rem;
+  font-size: 1.8rem;
+  padding-top: 2.5rem;
+}
+
+.red-stars{
+  color: red;
+  display: inline-block;
+}
+
+.gray-stars{
+  color: var(--clr-grey-5);
+  display: inline-block;
+}
+
+.TopProducts{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.productDiv{
+  display: flex;
+}
+
+.productCardimg{
+  width: 50%;
+  margin: 0;
+}
+
+.productCard{
+  margin-top: 1rem;
+  width: 33%;
+  align-items: center;
+  display: flex; 
+}
+/*  products End  */
+
+/* Cart CSS */
+
+
+.productCard-cart a { 
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+
+
+.productCard-cart{
+  width: 80%;
+  align-items: center;
+  display: flex; 
+  margin: 1rem 0 0 1rem;
+  /* Yo */
+}
+
+.cart-text{
+  font-size: 0.8rem;
+}
+
+.productCard-cart-img{
+  width: 130px;
+  height: 130px;
+  margin: 0;
+}
+
+.Allproducts-cart{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: left; */
+  margin: 0 1.5rem 0;
+  font-size: 1.8rem;
   width: 100%;
 }
-  
-  .hero-text {
-    display: grid;
-    text-align: center;
-  }
-  
-  /*Hero End*/
 
-  /* Credit card */
+.cart-items{
+  display:flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-bottom: 2rem;
+}
+
+.cart-steps{
+  display:flex;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  text-align: center;
+  background-color: #d7d7d7;
+  margin-top: -1rem;
+  font-size: large;
+  flex-direction:row;
+  justify-content: center;
+}
+
+.cart-step{
+  margin: 0;
+  color: hsl(0, 0%, 57.6%);
+}
+
+.cart-step-current{
+  margin: 0;
+  color: var(--clr-primary-5)
+
+}
+
+.underline-short-current{
+  width: 15rem;
+  height: 0.25rem;
+  margin: 0.6rem 0 1.25rem 0;
+
+  background: var(--clr-primary-5);
+}
+.underline-short{
+  width: 15rem;
+  height: 0.25rem;
+  margin: 0.6rem 0 1.25rem 0;
+  background: hsl(0, 0%, 57.6%);
+
+}
+
+.cart-header{
+  font-size: 1.5rem;
+  margin: 2rem 0 0 2rem;
+}
+.cart-header-underline{
+  width: 15.5rem;
+  height: 0.25rem;
+  margin: 0.9rem 0 1.25rem 1rem;
+  background: var(--clr-primary-5);
+}
+
+.coupon-container{
+  width: 15%;
+  display:flex;
+  flex-direction : column;
+  justify-content: left;
+  margin: 0 0 2rem 1.5rem;
+  text-align: left;
+}
+
+.coupon-container h5 {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.9rem;
+}
+.coupon{
+
+  font-size: 1rem;
+  margin: 0rem;
+  min-width: 125px;
+  padding: 0.5rem;
+  border: none;
+  background-color: #e6e6e6;
+  
+}
+
+.cart-summary{
+  width: 17%;
+  margin: 0 0 0 2rem;
+  padding-bottom: 1rem;
+   
+}
+.cart-summary p{
+  width: 49%;
+  margin: 0;
+  display: inline-block;
+}
+
+.text-right{
+  text-align: right;
+}
+.cart-total{
+  color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 90px;
+  margin-top:-50px;
+}
+
+/* Full-width input fields */
+.registerform{
+  width: 96%;
+  padding: 10px;
+  /* margin: 5px 0 15px 0; */
+  display: inline-block;
+  border: none;
+  background: #d5eafa;
+}
+
+.registerform:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+/* hr {
+  border: 1.5px solid #5010e6;
+  background-color:blue;
+  margin-bottom: 25px;
+} */
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #5132c2;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.register-form-main {
+  width: 50%;
+  height:50%;
+  background-color:rgba(172, 162, 162, 0.466)ff;
+}
+
+/* Credit card */
+
+.payment-content {
+  display:flex;
+  flex-direction: row;
+}
+
+.payment-method {
+  width:50%;
+  margin: 0;
+}
+
+/* .payment-summary{
+  width: 49%;
+} */
+.payment-product-view{
+  margin:1rem 0 0 0;
+  display:flex;
+  width: 100%;
+}
+.payment-img{
+  width: 80px;
+  height: 80px;
+}
+
+.product-payment-text {
+  margin:0.4rem 0 0 0;
+  display:flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.payment-summary{
+  width: 17%;
+  /* margin: 0 0 0 2rem; */
+  padding-bottom: 1rem;
+   
+}
+.payment-summary p, .payment-summary h1{
+  width: 49%;
+  margin: 0;
+  display: inline-block;
+}
+.payment-summary h1{
+  /* width: 17%; */
+  /* margin: 0 0 0 2rem; */
+  margin: 1rem 0 -0.3rem 1.4rem;
+   
+}
+.payment-view {
+  margin: -0.4rem 0 0 2rem;
+}
 
   .credit-card {
-    width: 360px;
-    height: 400px;
-    margin: 60px auto 0;
+    width: 100%;
+    /* margin: 60px auto 0; */
+    margin:15px;
     border: 1px solid #ddd;
     border-radius: 6px;
     background-color: #fff;
@@ -255,7 +620,7 @@ footer {
     padding: 20px 30px 0;
     border-bottom: 1px solid #e1e8ee;
 }
- 
+
 .form-body {
     height: 340px;
     padding: 30px 30px 20px;
@@ -296,8 +661,8 @@ footer {
 
 /* Card Number */
 .card-number {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 40%;
+    margin-bottom: 13px;
     padding-left: 20px;
     border: 2px solid #e1e8ee;
     border-radius: 6px;
@@ -306,9 +671,8 @@ footer {
 /* Date Field */
 .month select,
 .year select {
-    width: 145px;
+    width: 20%;
     margin-bottom: 20px;
-    padding-left: 20px;
     border: 2px solid #e1e8ee;
     border-radius: 6px;
     background: url('caret.png') no-repeat;
@@ -328,8 +692,8 @@ footer {
 /* Card Verification Field */
 .cvv-input input {
     float: left;
-    width: 145px;
-    padding-left: 20px;
+    width: 13%;
+    padding-left: 10px;
     border: 2px solid #e1e8ee;
     border-radius: 6px;
     background: #fff;
@@ -348,72 +712,72 @@ footer {
 }
 
 
-/*
- Produktartiklar Index - Start
-*/
+/*About Start*/
 
-.Allproducts{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: left; */
-  margin: 0 0.5rem 2rem;
-  font-size: 1.8rem;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.red-stars{
-  color: red;
+.column {
+  float: left;
+  width: 29%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 3rem 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
   display: inline-block;
-}
-
-.gray-stars{
-  color: var(--clr-grey-5);
-  display: inline-block;
-}
-
-.TopProducts{
-  display: flex;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
   width: 100%;
-  flex-wrap: wrap;
 }
 
-.productDiv{
-  display: flex;
+.button:hover {
+  background-color: #555;
 }
 
-.productCardimg{
-  width: 50%;
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.about-us-img{
+  width: 20%;
+  height: 20%;
   margin: 0;
 }
 
-.productCard{
-  margin-top: 1rem;
-  width: 33%;
-  align-items: center;
-  display: flex; 
-}
-
-/*
- Produktartiklar Index - End
-*/
-
-/* About Start */
-
-.AboutUs{
-  display: grid;
-  justify-content: space-evenly;
-  width: 75%;
-  font-size: 20px;
-}
-
-.AboutUsH3{
-  font-size: 40px;
-}
-
 /*About End*/
-
-/* Footer Start */
-.Footerclass{
-  margin-top: 1rem;
-
-}
-/* Footer End */
