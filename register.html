@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-center">
+            <div class="nav-header">
+                <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+            </div>
+
+            <ul>
+                <li class="list"><a href="index.html" class="nav-links">Hem</a></li>
+                <li class="list"><a href="about.html" class="nav-links">Om oss!</a></li>
+                <li class="list"><a href="shop.html" class="nav-links">Shop</a></li>
+                <li class="list"><a href="" class="nav-links">Profil</a></li>
+                <li><a href="home.html" class="btn">Log in</a></li>
+                <li><a href="register.html" class="btn">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    <formmain>
+
+        <form action="action_page.php">
+            <div class="container">
+              <h1>Register</h1>
+              <p>Fyll i formuläret för att registrera dig.</p>
+              <hr>
+        
+
+              <label for="name"><b>Namn</b></label>
+              <input type="text" placeholder="Enter name" name="name" id="namelabel" required>
+
+              <label for="adr"><b>Address</b></label>
+              <input type="text" placeholder="Enter address" name="adr" id="adrlabel" required>
+
+              <label for="pst"><b>Postnummer</b></label>
+              <input type="text" placeholder="Enter postal code" name="pst" id="pstlabel" required>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter email" name="email" id="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter password" name="psw" id="pswlabel" required>
+          
+              <label for="psw-repeat"><b>Confirm password</b></label>
+              <input type="password" placeholder="confirm password" name="psw-repeat" id="psw-repeat" required>
+          
+              <label for = "msg"><b>Message</b></label>
+              <input type = "text" placeholder="Enter a message" name="message" id="msg-label" required>
+              <hr>
+
+              <button type="submit" class="registerbtn">Register</button>
+            </div>
+          
+            <!-- <div class="container signin">
+              <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div> -->
+
+          </form>
+          
+    </formmain>
+
+    <footer class="footerclass">
+        <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+        <p>Kötteriet på Slakterigatan</p>
+        <p>Köttbullevägen 43, Skogskyrkogården</p>
+    </footer>
+</body>
+
+</html>
